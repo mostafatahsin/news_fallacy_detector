@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>News Fallacy Detector</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>📰 News Fallacy Detector</h1>
+      <p id="app_description">Enter a news topic. The app will return a summary of the top news for that topic, and analyze potential fallacies in the news.</p>
+      <form id="analyze-form">
+        <label for="topic">Topic</label>
+        <input id="topic" name="topic" type="text" placeholder="e.g., New policy announced on climate change" required />
+        <button type="submit" id="submit">Analyze</button>
+      </form>
+
+      <div id="status" class="status" hidden>Analyzing…</div>
+
+      <section id="results" class="results" hidden>
+        <h2>Summary</h2>
+        <div id="summary"></div>
+
+        <h2>Analysis</h2>
+        <div id="analysis"></div>
+
+        <h2>Source</h2>
+        <ul id="sources"></ul>
+      </section>
+    </div>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+  </body>
+</html>

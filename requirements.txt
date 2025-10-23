@@ -1,0 +1,11 @@
+Flask>=3.0
+gunicorn>=21.2
+python-dotenv>=1.0
+pandas>=2.2
+langchain>=0.2.10
+langchain-openai>=0.1.23
+langchain-community>=0.2.10
+tiktoken>=0.7.0
+requests>=2.32.0
+beautifulsoup4>=4.12.3
+lxml>=5.2.1
